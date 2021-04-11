@@ -1,0 +1,11 @@
+
+version: '3.4'
+
+services:
+  auth:
+    image: auth
+    build:
+      context: .
+      dockerfile: Auth/Dockerfile
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
